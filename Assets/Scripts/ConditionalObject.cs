@@ -6,6 +6,7 @@ public class ConditionalObject : MonoBehaviour
 
     private void Start()
     {
+        if (gameObject == null) return;
         gameObject.SetActive(false); 
         GameManager.Instance.RegisterConditional(this); 
     }

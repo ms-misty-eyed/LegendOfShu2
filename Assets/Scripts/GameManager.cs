@@ -4,8 +4,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    private HashSet<string> _collectedObjects;
-    private List<ConditionalObject> _conditionalObjects;
+    private HashSet<string> _collectedObjects = new HashSet<string>();
+    private List<ConditionalObject> _conditionalObjects = new List<ConditionalObject>();
 
     private void Awake()
     {
@@ -21,9 +21,9 @@ public class GameManager : MonoBehaviour
     {
         _collectedObjects.Add(objectName);
 
-        //notify all conditional objects to re-evaluate
         foreach (ConditionalObject obj in _conditionalObjects)
         {
+            if (obj == null) continue; //use continue not return, so the loop keeps going
             obj.Evaluate();
         }
     }
