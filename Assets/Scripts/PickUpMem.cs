@@ -5,9 +5,9 @@ using UnityEngine;
 public class PickUpMem : MonoBehaviour
 {
     public GameObject pickUpText;
-    public GameObject BlockOnPlayer;
+    public GameObject blockOnPlayer;
     public Transform tpTo;
-    public bool isPickedUp = false;
+    public bool isPickedUp;
 
     void Start()
     {
@@ -16,21 +16,18 @@ public class PickUpMem : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            pickUpText.SetActive(true);
+        if (!other.gameObject.CompareTag("Player")) return;
+        
+        pickUpText.SetActive(true);
 
-            // Check if 'E' key is held down to pick up the Block
-            if (Input.GetKey(KeyCode.E))
-            {
-                //gameObject.SetActive(false);
-                transform.position = tpTo.position;
-                //BlockOnPlayer.SetActive(true);
-                pickUpText.SetActive(false);
+        // Check if 'E' key is held down to pick up the Block
+        if (!Input.GetKey(KeyCode.E)) return;
+        //gameObject.SetActive(false);
+        transform.position = tpTo.position;
+        //BlockOnPlayer.SetActive(true);
+        pickUpText.SetActive(false);
 
-                isPickedUp = true;
-            }
-        }
+        isPickedUp = true;
     }
 
     private void OnTriggerExit(Collider other)
