@@ -55,5 +55,9 @@ public class TreeGrow : MonoBehaviour
             uncTree.transform.position = basePosition;
             teenTree.transform.position = currentPosition;
         }
+        else if(my_season_script.season ==5)
+        {
+            uncTree.transform.position = currentPosition;
+        }
     }
 }
