@@ -158,7 +158,7 @@ namespace StarterAssets
                         break;
                     case 2: targetSpeed *= 0.8f;  // slower in season 2
                         break;
-                    case 3: targetSpeed *= 1.2f;  // faster in season 3
+                    case 3: targetSpeed *= 0.6f;  // midway in season 3
                         break;
                     case 4: targetSpeed *= 0.5f;  // very slow in season 4
                         break;
@@ -196,6 +196,22 @@ namespace StarterAssets
         {
             if (Grounded)
             {
+                 float _jumpModifier =0f;
+                // modify speed based on season
+                if (_seasonCheck != null)
+                {
+                    switch (_seasonCheck.season)
+                    {
+                        case 1: _jumpModifier = 1f;    // normal jump
+                            break;
+                        case 2: _jumpModifier = 0.8f;  // lower jump in season 2
+                            break;
+                        case 3: _jumpModifier = 0.6f;  // midway in season 3
+                            break;
+                        case 4: _jumpModifier = 0.5f;  // very low in season 4
+                            break;
+                    }
+                }
                 _fallTimeoutDelta = FallTimeout;
 
                 if (_verticalVelocity < 0.0f)
@@ -205,7 +221,7 @@ namespace StarterAssets
 
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    _verticalVelocity = Mathf.Sqrt(JumpHeight * _jumpModifier * -2f * Gravity);
                 }
 
                 if (_jumpTimeoutDelta >= 0.0f)
