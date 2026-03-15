@@ -2,6 +2,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+namespace StarterAssets
+{
+    
+
 public class SeasonCheck : MonoBehaviour
 {
     public int season = 1;
@@ -47,4 +51,5 @@ public class SeasonCheck : MonoBehaviour
 
         HallWayDoorCollider.enabled = false;
     }
+}
 }
