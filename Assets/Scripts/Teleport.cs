@@ -1,3 +1,4 @@
+using StarterAssets;
 using UnityEngine;
 
 public class Teleport : MonoBehaviour
@@ -16,6 +17,9 @@ public class Teleport : MonoBehaviour
         controller.enabled = false;
         controller.transform.position = destination.position;
         controller.enabled = true;
+        
+        StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
+        if (movement != null) movement.ResetVelocity();
 
         Debug.Log("Teleported!");
     }

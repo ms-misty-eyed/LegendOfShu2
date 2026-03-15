@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 
 public class HallwayTeleport : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class HallwayTeleport : MonoBehaviour
     public Transform destinationS2;
     public Transform destinationS3;
     public Transform destinationS4;
-
-
+    
     void Start()
     {
         my_season_script = my_season.GetComponent<SeasonCheck>();
@@ -28,25 +28,24 @@ public class HallwayTeleport : MonoBehaviour
 
         controller.enabled = false;
 
-
         // tp based on season
-        if(my_season_script.season==2)
+        switch (my_season_script.season)
         {
-            controller.transform.position = destinationS2.position;
-        }
-        else if(my_season_script.season==3)
-        {
-            controller.transform.position = destinationS3.position;
-        }
-        else if(my_season_script.season==4)
-        {
-            controller.transform.position = destinationS4.position;
+            case 2: controller.transform.position = destinationS2.position;
+                break;
+            case 3: controller.transform.position = destinationS3.position;
+                break;
+            case 4: controller.transform.position = destinationS4.position;
+                break;
+            
         }
 
-
-        my_season_script.HallWayDoorCollider.isTrigger = true;
+        my_season_script.ResetDoor();
 
         controller.enabled = true;
+        
+        StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
+        if (movement != null) movement.ResetVelocity();
 
         Debug.Log("Teleported!");
     }

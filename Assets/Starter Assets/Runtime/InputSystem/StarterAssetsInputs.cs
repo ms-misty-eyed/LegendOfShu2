@@ -12,6 +12,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		private Vector3 _velocity = Vector3.zero;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -77,6 +78,11 @@ namespace StarterAssets
 		private void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+		}
+
+		public void ResetVelocity()
+		{
+			_velocity = Vector3.zero;
 		}
 	}
 	

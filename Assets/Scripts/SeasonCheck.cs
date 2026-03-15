@@ -8,44 +8,43 @@ public class SeasonCheck : MonoBehaviour
     public Collider HallWayDoorCollider;
     public Vector3 currentPosition;
     public Vector3 basePosition;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private bool _waitingToReset = false;
+
     void Start()
     {
         HallWayDoorCollider = GetComponent<Collider>();
         basePosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(HallWayDoorCollider.isTrigger == true)
+        if (_waitingToReset)
         {
             transform.position = basePosition;
+            HallWayDoorCollider.enabled = true;
+            _waitingToReset = false;
         }
+    }
+    
+    public void ResetDoor()
+    {
+        _waitingToReset = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // checks if the player collided with door
-        if(other.gameObject.CompareTag("Player"))
-        {
-            // sends a message for debug
-            Debug.Log("Player detected");
+        if (!other.gameObject.CompareTag("Player")) return;
 
-            // changes the season
-            season += 1;
-            Debug.Log("season is: " + season);
+        Debug.Log("Player detected");
 
-            // set the collider to false to not trigger the season adding again
-            HallWayDoorCollider.isTrigger = false;
-            Debug.Log("isTrigger set to: " + HallWayDoorCollider.isTrigger);
+        season += 1;
+        Debug.Log("season is: " + season);
+        
+        currentPosition = transform.position;
+        currentPosition.y = -50f;
+        transform.position = currentPosition;
 
-            // make the door disappear after you tp
-            currentPosition = transform.position;
-            currentPosition.y = -50f;
-            transform.position = currentPosition;
-
-        }
+        HallWayDoorCollider.enabled = false;
     }
 }
