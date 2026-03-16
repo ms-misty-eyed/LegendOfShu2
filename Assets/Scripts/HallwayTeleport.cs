@@ -31,11 +31,11 @@ public class HallwayTeleport : MonoBehaviour
         // tp based on season
         switch (my_season_script.season)
         {
-            case 2: controller.transform.position = destinationS2.position;
+            case 1: controller.transform.position = destinationS2.position;
                 break;
-            case 3: controller.transform.position = destinationS3.position;
+            case 2: controller.transform.position = destinationS3.position;
                 break;
-            case 4: controller.transform.position = destinationS4.position;
+            case 3: controller.transform.position = destinationS4.position;
                 break;
             
         }
