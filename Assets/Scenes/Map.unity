@@ -26869,6 +26869,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -28.64
       objectReference: {fileID: 0}
+    - target: {fileID: 7039742486612658010, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: outlineWidth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7631992937763042415, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
       propertyPath: m_Name
       value: TpCubeS1
