@@ -4,6 +4,8 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     public Transform destination;
+    public Transform player;
+    public Transform target;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +22,7 @@ public class Teleport : MonoBehaviour
         
         StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
         if (movement != null) movement.ResetVelocity();
+        player.LookAt(target);
 
         Debug.Log("Teleported!");
     }
