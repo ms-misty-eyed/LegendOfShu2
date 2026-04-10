@@ -11,6 +11,9 @@ public class HallwayTeleport : MonoBehaviour
     public Transform destinationS2;
     public Transform destinationS3;
     public Transform destinationS4;
+
+    public Transform player;
+    public Transform target;
     
     void Start()
     {
@@ -46,7 +49,7 @@ public class HallwayTeleport : MonoBehaviour
         
         StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
         if (movement != null) movement.ResetVelocity();
-
+        player.LookAt(target);
         Debug.Log("Teleported!");
     }
 }
