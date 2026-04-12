@@ -13,7 +13,6 @@ public class HallwayTeleport : MonoBehaviour
     public Transform destinationS4;
 
     public Transform player;
-    public Transform target;
     
     void Start()
     {
@@ -35,21 +34,22 @@ public class HallwayTeleport : MonoBehaviour
         switch (my_season_script.season)
         {
             case 1: controller.transform.position = destinationS2.position;
+                player.SetPositionAndRotation(destinationS2.position, destinationS2.rotation);
                 break;
             case 2: controller.transform.position = destinationS3.position;
+                player.SetPositionAndRotation(destinationS3.position, destinationS3.rotation);
                 break;
             case 3: controller.transform.position = destinationS4.position;
+                player.SetPositionAndRotation(destinationS4.position,destinationS4.rotation);
                 break;
             
         }
 
         my_season_script.ResetDoor();
-
         controller.enabled = true;
         
         StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
         if (movement != null) movement.ResetVelocity();
-        player.LookAt(target);
-        Debug.Log("Teleported!");
+        //Debug.Log("Teleported!");
     }
 }
