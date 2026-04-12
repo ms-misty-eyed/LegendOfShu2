@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,7 +45,10 @@ public class HallwayTeleport : MonoBehaviour
                 break;
             
         }
-
+        //Thicken the fog
+        RenderSettings.fogDensity += 0.01f;
+        Debug.Log("Fog increased to " + RenderSettings.fogDensity);
+        
         my_season_script.ResetDoor();
         controller.enabled = true;
         
