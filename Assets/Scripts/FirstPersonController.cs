@@ -1,4 +1,5 @@
-﻿using StarterAssets;
+﻿using System;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -196,7 +197,7 @@ namespace StarterAssets
         {
             if (Grounded)
             {
-                 float _jumpModifier =0f;
+                 float _jumpModifier =1f;
                 // modify speed based on season
                 if (_seasonCheck != null)
                 {
