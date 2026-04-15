@@ -129,7 +129,9 @@ MonoBehaviour:
   pickUpText: {fileID: 0}
   blockOnPlayer: {fileID: 0}
   tpTo: {fileID: 6399484434629650099}
+  holdPoint: {fileID: 0}
   isPickedUp: 0
+  rotateSpeed: 5
 --- !u!114 &7039742486612658010
 MonoBehaviour:
   m_ObjectHideFlags: 0

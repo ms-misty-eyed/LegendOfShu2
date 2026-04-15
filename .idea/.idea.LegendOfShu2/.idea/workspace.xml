@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="222d7d92-062d-401a-8dfb-f63f223c4644" name="Changes" comment="" />
+    <list default="true" id="222d7d92-062d-401a-8dfb-f63f223c4644" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MemCube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MemCube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUpMem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUpMem.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +111,7 @@
       <workItem from="1775844023978" duration="4065000" />
       <workItem from="1775957260113" duration="5851000" />
       <workItem from="1776199398804" duration="330000" />
+      <workItem from="1776280182346" duration="1440000" />
     </task>
     <servers />
   </component>
