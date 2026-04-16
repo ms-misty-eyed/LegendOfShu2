@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 0
-  m_FogColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  m_FogColor: {r: 0.6698113, g: 0.66665184, b: 0.66665184, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -32885,6 +32885,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: MemCube
       objectReference: {fileID: 0}
+    - target: {fileID: 5882443839384380285, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882443839384380285, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882443839384380285, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: m_Size.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882443839384380285, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882443839384380285, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6399484434629650099, guid: 534bb65708bf4eb429285396acb7dab5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -410.6
@@ -35470,6 +35490,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2023392051}
     m_Modifications:
+    - target: {fileID: 64026528614812906, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
+      propertyPath: m_Size.x
+      value: 2.317774
+      objectReference: {fileID: 0}
+    - target: {fileID: 64026528614812906, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
+      propertyPath: m_Size.y
+      value: 3.0831606
+      objectReference: {fileID: 0}
+    - target: {fileID: 64026528614812906, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
+      propertyPath: m_Center.x
+      value: -0.040572524
+      objectReference: {fileID: 0}
+    - target: {fileID: 64026528614812906, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
+      propertyPath: m_Center.y
+      value: 1.2913526
+      objectReference: {fileID: 0}
+    - target: {fileID: 64026528614812906, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
+      propertyPath: m_Center.z
+      value: -8.489622e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 2973559031973206261, guid: 6a0af9e79cc17484ab366a370edbe4df, type: 3}
       propertyPath: player
       value: 

@@ -112,7 +112,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 5, y: 2, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8386964160005556652
 MonoBehaviour:
@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpMem
   pickUpText: {fileID: 0}
-  blockOnPlayer: {fileID: 0}
   tpTo: {fileID: 6399484434629650099}
   holdPoint: {fileID: 0}
   isPickedUp: 0

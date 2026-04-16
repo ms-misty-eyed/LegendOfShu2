@@ -9,8 +9,6 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Something entered: " + other.gameObject.name);
-
         if (!other.CompareTag("Player")) return;
 
         CharacterController controller = other.GetComponentInParent<CharacterController>();
@@ -22,8 +20,9 @@ public class Teleport : MonoBehaviour
         
         StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
         if (movement != null) movement.ResetVelocity();
-        player.LookAt(target);
-
-        Debug.Log("Teleported!");
+        
+        Vector3 direction = target.position - player.position;
+        direction.y = 0; // ignore height difference
+        player.rotation = Quaternion.LookRotation(direction);
     }
 }

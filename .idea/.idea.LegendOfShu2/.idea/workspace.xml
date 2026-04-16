@@ -8,7 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MemCube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MemCube.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUpMem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUpMem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Teleport.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/74dc4a0898414b09bf6fc73e5cf3af361f5a00/35/7a44c2ed/RenderSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Readme.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -44,7 +46,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -112,6 +114,8 @@
       <workItem from="1775957260113" duration="5851000" />
       <workItem from="1776199398804" duration="330000" />
       <workItem from="1776280182346" duration="1440000" />
+      <workItem from="1776299345605" duration="325000" />
+      <workItem from="1776299689759" duration="1438000" />
     </task>
     <servers />
   </component>
