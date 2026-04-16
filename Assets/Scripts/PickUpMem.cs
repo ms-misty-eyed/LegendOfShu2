@@ -1,44 +1,75 @@
 using UnityEngine;
+using StarterAssets;
+// Add this for the Input System
+using UnityEngine.InputSystem; 
 
 public class PickUpMem : MonoBehaviour
 {
     public GameObject pickUpText;
     public Transform tpTo;
-    public Transform holdPoint;
     public bool isPickedUp;
+    public Rigidbody rb;
 
     [Header("Inspect Settings")]
-    public float rotateSpeed = 5f;
+    public float rotateSpeed = 0.5f; // Lowered for Input System delta values
+    public float distanceInFrontOfCamera = 1.0f;
 
-    private bool isInspecting = false;
-    private bool justStartedInspecting = false;
-    private bool playerNearby = false;
-    private Camera cam;
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
+    [Header("Camera")]
+    public GameObject cinemachineCameraTarget;
+
+    private bool _isInspecting;
+    private bool _justStartedInspecting;
+    private bool _centeringCamera;
+    private Camera _cam;
+    private Quaternion _originalRotation;
+    private FirstPersonController _playerController;
 
     void Start()
     {
         pickUpText.SetActive(false);
-        cam = Camera.main;
-        originalPosition = transform.position;
-        originalRotation = transform.rotation;
+        _cam = Camera.main;
+        _originalRotation = transform.rotation;
+
+        _playerController = FindObjectOfType<FirstPersonController>();
+        if (_playerController == null)
+            Debug.LogError("FirstPersonController not found!");
     }
 
     void Update()
     {
-        if (!isInspecting) return;
+        if (!_isInspecting) return;
 
-        transform.position = Vector3.Lerp(transform.position, holdPoint.position, Time.deltaTime * 10f);
+        // Keep object in front of camera
+        transform.position = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
 
-        float mouseX = Input.GetAxis("Mouse X") * rotateSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * rotateSpeed;
-        transform.Rotate(cam.transform.up, -mouseX, Space.World);
-        transform.Rotate(cam.transform.right, mouseY, Space.World);
-
-        if (justStartedInspecting)
+        if (_centeringCamera)
         {
-            justStartedInspecting = false;
+            Quaternion current = cinemachineCameraTarget.transform.localRotation;
+            Quaternion target = Quaternion.Euler(0f, 0f, 0f);
+            cinemachineCameraTarget.transform.localRotation = Quaternion.Slerp(current, target, Time.deltaTime * 10f);
+
+            if (Quaternion.Angle(current, target) < 0.1f)
+                _centeringCamera = false;
+            
+            // Allow rotation even while centering for a smoother feel
+        }
+
+        // --- NEW INPUT SYSTEM MOUSE DETECTION ---
+        // Mouse.current.delta reads the raw movement even if the controller is off
+        Vector2 mouseDelta = Mouse.current.delta.ReadValue();
+        
+        float rotateX = mouseDelta.x * rotateSpeed;
+        float rotateY = mouseDelta.y * rotateSpeed;
+
+        if (mouseDelta.sqrMagnitude > 0.01f)
+        {
+            transform.Rotate(_cam.transform.up, -rotateX, Space.World);
+            transform.Rotate(_cam.transform.right, rotateY, Space.World);
+        }
+
+        if (_justStartedInspecting)
+        {
+            _justStartedInspecting = false;
             return;
         }
 
@@ -49,34 +80,53 @@ public class PickUpMem : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
-        if (isInspecting) return;
+        if (_isInspecting) return;
 
-        playerNearby = true;
         pickUpText.SetActive(true);
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             pickUpText.SetActive(false);
-            isInspecting = true;
-            justStartedInspecting = true;
-            GetComponent<Collider>().enabled = false;
+            _isInspecting = true;
+            _justStartedInspecting = true;
+            _centeringCamera = true;
+
+            if (rb != null) rb.isKinematic = true;
+
+            foreach (Collider col in GetComponents<Collider>())
+                col.enabled = false;
+
+            if (_playerController != null)
+                _playerController.enabled = false;
+
+            // Important: Keep the cursor locked to capture Delta movement
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
-
-        playerNearby = false;
         pickUpText.SetActive(false);
     }
 
-    void SendToTree()
+    public void SendToTree()
     {
-        isInspecting = false;
+        _isInspecting = false;
+        _centeringCamera = false;
         isPickedUp = true;
+        
         transform.position = tpTo.position;
-        transform.rotation = originalRotation;
-        GetComponent<Collider>().enabled = true;
+        transform.rotation = _originalRotation;
+
+        if (rb != null) rb.isKinematic = false;
+
+        foreach (Collider col in GetComponents<Collider>())
+            col.enabled = true;
+
+        if (_playerController != null)
+            _playerController.enabled = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
