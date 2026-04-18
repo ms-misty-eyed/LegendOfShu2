@@ -22,7 +22,7 @@ public class TreeGrow : MonoBehaviour
         basePosition = transform.position;
 
         currentPosition = transform.position;
-        currentPosition.y = -50f;
+        currentPosition.y = -500f;
 
 
         babyTree.transform.position = currentPosition;
