@@ -109,6 +109,17 @@ namespace StarterAssets
             _fallTimeoutDelta = FallTimeout;
 
             _seasonCheck = FindObjectOfType<SeasonCheck>();
+
+            // 1. Set the body rotation (Y axis)
+        // Replace 90f with the angle you want (0 is North, 90 is East, etc.)
+        transform.rotation = Quaternion.Euler(0, 90f, 0); 
+
+     // 2. Set the camera pitch (X axis)
+        // 0 is looking perfectly level at the horizon
+        _cinemachineTargetPitch = 0f;
+    
+        // 3. Force the camera target to match immediately
+        CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
             
             //Disable the cursor
             Cursor.visible = false;
@@ -123,6 +134,9 @@ namespace StarterAssets
 
         private void LateUpdate()
         {
+            // If the game just started (less than 0.2 seconds ago), 
+            // skip the rotation math entirely.
+            if (Time.timeSinceLevelLoad < 0.2f) return;
             CameraRotation();
         }
 
@@ -134,6 +148,8 @@ namespace StarterAssets
 
         private void CameraRotation()
         {
+            if (Time.timeScale == 0f) return;
+            
             if (_input.look.sqrMagnitude >= _threshold)
             {
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
