@@ -109,6 +109,9 @@ namespace StarterAssets
             _fallTimeoutDelta = FallTimeout;
 
             _seasonCheck = FindObjectOfType<SeasonCheck>();
+            
+            //Disable the cursor
+            Cursor.visible = false;
         }
 
         private void Update()
