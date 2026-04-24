@@ -8,6 +8,7 @@ public class PauseManager : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject pauseBackground;
     public GameObject settingsMenuUI;
+    public GameObject settingIcon;
     private bool isPaused = false;
 
     void Update()
@@ -25,7 +26,8 @@ public class PauseManager : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         pauseBackground.SetActive(false);
-        settingsMenuUI.SetActive(true);
+        settingsMenuUI.SetActive(false);
+        settingIcon.SetActive(true);
         Time.timeScale = 1f; // Game moves again
         isPaused = false;
 
@@ -45,6 +47,7 @@ public class PauseManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         pauseBackground.SetActive(true);
         settingsMenuUI.SetActive(false);
+        settingIcon.SetActive(false);
         Time.timeScale = 0f; // Everything freezes!
         isPaused = true;
         Cursor.lockState = CursorLockMode.None; // Show mouse
@@ -56,8 +59,18 @@ public class PauseManager : MonoBehaviour
     public void OpenSettings()
     {
         // This hides the main pause buttons and shows the settings
-        pauseMenuUI.SetActive(false);
-        settingsMenuUI.SetActive(true);
+        //pauseMenuUI.SetActive(false);
+        //settingsMenuUI.SetActive(true);
+
+        Debug.Log("Attempting to hide MainMenu now");
+
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(false);
+            Debug.Log("closed pauseMenuUI");
+        }
+
+        if(settingsMenuUI != null) settingsMenuUI.SetActive(true);
     }
 
     public void QuitToMenu()
