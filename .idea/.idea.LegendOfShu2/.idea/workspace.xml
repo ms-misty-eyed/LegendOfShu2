@@ -5,7 +5,458 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="222d7d92-062d-401a-8dfb-f63f223c4644" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LegendOfShu2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Boxophobic.SkyboxCubemapExtended.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Boxophobic.SkyboxCubemapExtended.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/SkyboxExtendedShaderGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/SkyboxExtendedShaderGUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/SkyboxExtendedWindows.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/SkyboxExtendedWindows.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Version.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Version.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Functions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Functions/Compute Rotation Y.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Functions/Compute Rotation Y.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Blend.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Blend.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Blend.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Blend.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Day.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Day.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Night.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Night.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - FirTree.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - FirTree.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - FirTreeVariation.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - FirTreeVariation.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Grass.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Grass.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Rock.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Rock.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Terrain.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Terrain.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - TreeTrunk.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - TreeTrunk.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Wood.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/LowPoly - Wood.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Blend.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Blend.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Day.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Day.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Night.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Night.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Fence A.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Fence A.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Fence B.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Fence B.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - FirTree A.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - FirTree A.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - FirTree B.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - FirTree B.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Grass A.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Grass A.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Grass B.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Grass B.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Rock A.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Rock A.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Rock B.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Rock B.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Terrain.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Meshes/LowPoly - Terrain.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Fence A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Fence A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Fence B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Fence B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - FirTree A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - FirTree A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - FirTree B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - FirTree B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Grass A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Grass A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Grass B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Grass B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Rock A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Rock A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Rock B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Prefabs/LowPoly - Rock B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Settings/Demo.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Settings/Demo.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Blue Sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Blue Sky.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Night Sky.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Night Sky.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Skybox Cubemap Extended.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Skybox Cubemap Extended.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Boxophobic.Utils.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Boxophobic.Utils.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Constant.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Constant/Constant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Constant/Constant.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Notebox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Notebox/NoteboxInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Notebox/NoteboxInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/SettingsUtils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/SettingsUtils/LoadSettingsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/SettingsUtils/LoadSettingsData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/SettingsUtils/SaveSettingsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/SettingsUtils/SaveSettingsData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorBanner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorBanner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorCategory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorCategory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorHeader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawInspectorHeader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawTexturePreview.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawTexturePreview.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowBanner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowBanner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowCategory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledGUI/DrawWindowCategory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledBannerDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledBannerDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledButtonDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledButtonDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledCategoryDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledCategoryDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledDisplayDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledDisplayDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledEnumDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledEnumDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledIndentDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledIndentDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledInteractiveDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledInteractiveDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledLayersDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledLayersDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMaskDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMaskDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMessageDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledMessageDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledRangeOptionsDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledRangeOptionsDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledSpaceDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledSpaceDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTextDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTextDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTexturePreviewDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledInspector/StyledTexturePreviewDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledBannerDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledBannerDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledButtonDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledButtonDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledCategoryDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledCategoryDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledColoringDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledColoringDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledDiffusionMaterialDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledDiffusionMaterialDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEmissiveIntensityDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEmissiveIntensityDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEnumDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledEnumDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledHeaderDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledHeaderDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledIndentDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledIndentDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledInteractiveDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledInteractiveDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledKeywordDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledKeywordDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledKeywordInvertedDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledKeywordInvertedDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledLayersDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledLayersDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMaskDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMaskDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMessageDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledMessageDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledOptionsSliderDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledOptionsSliderDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledRemapSliderDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledRemapSliderDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledSpaceDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledSpaceDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureSingleLineDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledTextureSingleLineDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledToggleDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledToggleDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector2Drawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector2Drawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector3Drawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector3Drawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector4Drawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVector4Drawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVectorDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMaterial/StyledVectorDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMono.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMono/StyledMonoBehaviourEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMono/StyledMonoBehaviourEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMono/StyledScriptableObjectEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/StyledMono/StyledScriptableObjectEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Version.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Editor/Version.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Gizmos/Notebox.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Gizmos/Notebox.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Gizmos/SettingsData.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Gizmos/SettingsData.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera HD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera HD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera Universal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Camera Universal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light HD Day.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light HD Day.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light HD Low.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light HD Low.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Standard Day.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Standard Day.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Standard Low.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Standard Low.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Universal Day.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Universal Day.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Universal Low.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Light Universal Low.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post HD Day.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post HD Day.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post HD Low.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post HD Low.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post Universal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Post Universal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Scene Empty.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Scene Empty.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Scene Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scene/Scene Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Boxophobic.Utils.Scripts.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Boxophobic.Utils.Scripts.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Notebox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Notebox/Notebox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Notebox/Notebox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/CamController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/CamController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/FPSController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/FPSController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/NPCController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/NPCController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/SceneSwitch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Runtime/SceneSwitch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/SettingsUtils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/SettingsUtils/SettingsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/SettingsUtils/SettingsData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledGizmos/StyledLabelGizmo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledGizmos/StyledLabelGizmo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledBanner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledBanner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledCategory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledCategory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledEnum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledEnum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledIndent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledIndent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledInteractive.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledInteractive.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledLayers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledLayers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMask.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledRangeOptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledRangeOptions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledSpace.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledTexturePreview.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledInspector/StyledTexturePreview.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledMono.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledMonoBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledMonoBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledScriptableObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledMono/StyledScriptableObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utility.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utility/Utility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utility/Utility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Sky.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Sky.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Volume Day.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Volume Day.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Volume Low.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/HD Volume Low.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Lighting Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Lighting Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Standard Volume.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Standard Volume.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Universal Volume.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Settings/Universal Volume.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Shaders/Channel Preview.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Shaders/Channel Preview.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blender/Untitled.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blender/mapFall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blender/mapSummer.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blender/mapWinter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OccaSoftware.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogFade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogFade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/6SidedFluffball.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/6SidedFluffball.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/CasualDay.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/CasualDay.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/Cloudymorning.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/Cloudymorning.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/AmbienceExposure.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/AmbienceExposure.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CasualDay.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CasualDay.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CloudyMorning.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CloudyMorning.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CosmicCoolCloud.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/CosmicCoolCloud.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/DarkStorm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/DarkStorm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/DayInTheClouds.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/DayInTheClouds.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/Daylightfreebiedemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/Daylightfreebiedemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/HighFantasy.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/HighFantasy.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/MidNightFreebieDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/MidNightFreebieDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/PlanetaryFreebie.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/PlanetaryFreebie.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/2_10.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/2_10.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/4_10.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/4_10.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/6_10.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/6_10.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/8_10.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/8_10.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/DemoObjects.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/DemoObjects.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/Full.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SceneObjects/Full.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SkyhighFreebieDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SkyhighFreebieDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SundownFreebieDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SundownFreebieDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SunlessFreebieDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/SunlessFreebieDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/UnEarthlyRed.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/UnEarthlyRed.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/UnderTheSea.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/ExampleScenes/UnderTheSea.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FluffballDay.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FluffballDay.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/AmbienceExposure4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/AmbienceExposure4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CasualDay4K.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CasualDay4K.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CloudedSunGlow4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CloudedSunGlow4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/Cloudymorning4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/Cloudymorning4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CoriolisNight4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CoriolisNight4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudBack.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudBack.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudBottom.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudBottom.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudEQ_hdr.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudEQ_hdr.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudFront.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudFront.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudLeft.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudLeft.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudRight.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudRight.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudTop.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/CosmicCoolCloudTop.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/DarkStorm4K.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/DarkStorm4K.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/DayInTheClouds4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/DayInTheClouds4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDay4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDay4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayBack.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayBack.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayBottom.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayBottom.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayFront.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayFront.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayLeft.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayLeft.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayRight.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayRight.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayTop.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/FluffballDayTop.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/HighFantasy4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/HighFantasy4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSun4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSun4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunBack.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunBack.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunBottom.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunBottom.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunFront.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunFront.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunLeft.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunLeft.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunRight.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunRight.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunTop.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/MegaSunTop.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/PlanetaryEarth4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/PlanetaryEarth4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/SkyhighFluffycloudField4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/SkyhighFluffycloudField4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/SunlessCirruscover4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/SunlessCirruscover4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/UnderTheSea4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/UnderTheSea4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/UnearthlyRed4k.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/FreebieHdri/UnearthlyRed4k.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/Hdri setup.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/Hdri setup.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/SkyhighFluffycloudField.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/SkyhighFluffycloudField.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/SunlessCirruscover.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyBoxes/SunlessCirruscover.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyboxMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SkyboxMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +565,7 @@
       <workItem from="1776299345605" duration="325000" />
       <workItem from="1776299689759" duration="8765000" />
       <workItem from="1776716241725" duration="71000" />
-      <workItem from="1777033304744" duration="1265000" />
+      <workItem from="1777033304744" duration="665000" />
     </task>
     <servers />
   </component>
