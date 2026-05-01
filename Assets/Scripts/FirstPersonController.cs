@@ -52,7 +52,7 @@ namespace StarterAssets
         public float BottomClamp = -90.0f;
 
         // cinemachine
-        private float _cinemachineTargetPitch;
+        public float _cinemachineTargetPitch;
 
         // player
         private float _speed;
@@ -130,9 +130,6 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
-
-            Cursor.lockState = CursorLockMode.Locked;
-    Cursor.visible = false;
         }
 
         private void LateUpdate()
@@ -287,5 +284,11 @@ namespace StarterAssets
 
             Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
         }
+
+        public void SetCameraPitch(float pitch)
+{
+    _cinemachineTargetPitch = pitch;
+    CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0f, 0f);
+}
     }
 }

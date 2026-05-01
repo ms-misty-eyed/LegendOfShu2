@@ -1,6 +1,5 @@
 using UnityEngine;
 using StarterAssets;
-// Add this for the Input System
 using UnityEngine.InputSystem; 
 
 public class PickUpMem : MonoBehaviour
@@ -12,19 +11,24 @@ public class PickUpMem : MonoBehaviour
     public Rigidbody rb;
 
     [Header("Inspect Settings")]
-    public float rotateSpeed = 0.5f; // Lowered for Input System delta values
+    public float rotateSpeed = 0.5f;
     public float distanceInFrontOfCamera = 1.0f;
-    public float heightOffset = 2f;
+    public float heightOffset = 0f;
 
     [Header("Camera")]
     public GameObject cinemachineCameraTarget;
 
     private bool _isInspecting;
-    private bool _justStartedInspecting;
+    private bool _playerInRange = false;
+    private float _inspectCooldown = 0f;
+    private float _inspectCooldownDuration = 0.3f;
     private bool _centeringCamera;
+    private Vector3 _inspectWorldPosition;
     private Camera _cam;
     private Quaternion _originalRotation;
     private FirstPersonController _playerController;
+
+    private FirstPersonController _fpc;
 
     void Start()
     {
@@ -36,38 +40,65 @@ public class PickUpMem : MonoBehaviour
         _playerController = FindObjectOfType<FirstPersonController>();
         if (_playerController == null)
             Debug.LogError("FirstPersonController not found!");
+
+        _fpc = FindObjectOfType<FirstPersonController>();
     }
 
     void Update()
     {
+        // Handle pickup input in Update instead of OnTriggerStay
+        if (_playerInRange && !_isInspecting && Input.GetKeyDown(KeyCode.E))
+{
+    pickUpText.SetActive(false);
+    turnText.SetActive(true);
+    _isInspecting = true;
+    _inspectCooldown = _inspectCooldownDuration;
+
+    _inspectWorldPosition = _cam.transform.position + 
+                            (_cam.transform.forward * distanceInFrontOfCamera) + 
+                            (Vector3.up * heightOffset);
+
+    // Calculate and apply pitch BEFORE disabling the controller
+    Vector3 directionToObject = _inspectWorldPosition - _cam.transform.position;
+    Quaternion targetRotation = Quaternion.LookRotation(directionToObject);
+    float targetPitch = targetRotation.eulerAngles.x;
+    if (targetPitch > 180f) targetPitch -= 360f;
+    _fpc.SetCameraPitch(targetPitch);
+
+    if (rb != null) rb.isKinematic = true;
+
+    foreach (Collider col in GetComponents<Collider>())
+        col.enabled = false;
+
+    if (_playerController != null)
+        _playerController.enabled = false;
+
+    Cursor.lockState = CursorLockMode.None;
+    Cursor.visible = true;
+}
+
         if (!_isInspecting) return;
 
-        // 1. Calculate the base position in front of the camera
-        Vector3 basePos = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
-
-        // 2. LIFT it up relative to the camera's head (Up is always 'above' your eyes)
-        // Increase heightOffset in the Inspector if it still feels too low!
-        transform.position = basePos + (_cam.transform.up * heightOffset);
-
-        // Keep object in front of camera
-        //transform.position = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
+        // Keep object at its locked world position
+        transform.position = _inspectWorldPosition;
 
         if (_centeringCamera)
-        {
-            Quaternion current = cinemachineCameraTarget.transform.localRotation;
-            Quaternion target = Quaternion.Euler(0f, 0f, 0f);
-            cinemachineCameraTarget.transform.localRotation = Quaternion.Slerp(current, target, Time.deltaTime * 10f);
+{
+    Vector3 directionToObject = transform.position - _cam.transform.position;
+    Quaternion targetRotation = Quaternion.LookRotation(directionToObject);
 
-            if (Quaternion.Angle(current, target) < 0.1f)
-                _centeringCamera = false;
-            
-            // Allow rotation even while centering for a smoother feel
-        }
+    float targetPitch = targetRotation.eulerAngles.x;
+    if (targetPitch > 180f) targetPitch -= 360f;
 
-        // --- NEW INPUT SYSTEM MOUSE DETECTION ---
-        // Mouse.current.delta reads the raw movement even if the controller is off
+    // Snap directly instead of lerping
+    _fpc._cinemachineTargetPitch = targetPitch;
+    cinemachineCameraTarget.transform.localRotation = Quaternion.Euler(targetPitch, 0f, 0f);
+
+    _centeringCamera = false;
+}
+
+        // Rotate object with mouse
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
-        
         float rotateX = mouseDelta.x * rotateSpeed;
         float rotateY = mouseDelta.y * rotateSpeed;
 
@@ -77,49 +108,35 @@ public class PickUpMem : MonoBehaviour
             transform.Rotate(_cam.transform.right, rotateY, Space.World);
         }
 
-        if (_justStartedInspecting)
-        {
-            _justStartedInspecting = false;
-            return;
-        }
+        // Cooldown before allowing E to exit inspect
+        _inspectCooldown -= Time.deltaTime;
+        if (_inspectCooldown > 0f) return;
 
-        if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetKeyDown(KeyCode.E))
+        {
             turnText.SetActive(false);
             SendToTree();
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.gameObject.CompareTag("Player")) return;
+        _playerInRange = true;
+        pickUpText.SetActive(true);
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
-        if (_isInspecting) return;
-
+        _playerInRange = true;
         pickUpText.SetActive(true);
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            pickUpText.SetActive(false);
-            turnText.SetActive(true);
-            _isInspecting = true;
-            _justStartedInspecting = true;
-            _centeringCamera = true;
-
-            if (rb != null) rb.isKinematic = true;
-
-            foreach (Collider col in GetComponents<Collider>())
-                col.enabled = false;
-
-            if (_playerController != null)
-                _playerController.enabled = false;
-
-            // Important: Keep the cursor locked to capture Delta movement
-            Cursor.lockState = CursorLockMode.Locked;
-        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
+        _playerInRange = false;
         pickUpText.SetActive(false);
     }
 
@@ -141,5 +158,6 @@ public class PickUpMem : MonoBehaviour
             _playerController.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
