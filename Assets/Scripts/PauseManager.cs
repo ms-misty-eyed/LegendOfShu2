@@ -11,6 +11,21 @@ public class PauseManager : MonoBehaviour
     public GameObject settingIcon;
     private bool isPaused = false;
 
+
+        void Start()
+{
+    // Make sure we always start unpaused
+    pauseMenuUI.SetActive(false);
+    pauseBackground.SetActive(false);
+    settingsMenuUI.SetActive(false);
+    settingIcon.SetActive(true);
+    Time.timeScale = 1f;
+    isPaused = false;
+    Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
+}
+
+
     void Update()
     {
         // Check if player presses Escape (or 'P' for Pause)

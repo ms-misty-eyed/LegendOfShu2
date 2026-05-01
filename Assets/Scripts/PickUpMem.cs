@@ -14,6 +14,7 @@ public class PickUpMem : MonoBehaviour
     [Header("Inspect Settings")]
     public float rotateSpeed = 0.5f; // Lowered for Input System delta values
     public float distanceInFrontOfCamera = 1.0f;
+    public float heightOffset = 2f;
 
     [Header("Camera")]
     public GameObject cinemachineCameraTarget;
@@ -41,8 +42,15 @@ public class PickUpMem : MonoBehaviour
     {
         if (!_isInspecting) return;
 
+        // 1. Calculate the base position in front of the camera
+        Vector3 basePos = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
+
+        // 2. LIFT it up relative to the camera's head (Up is always 'above' your eyes)
+        // Increase heightOffset in the Inspector if it still feels too low!
+        transform.position = basePos + (_cam.transform.up * heightOffset);
+
         // Keep object in front of camera
-        transform.position = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
+        //transform.position = _cam.transform.position + (_cam.transform.forward * distanceInFrontOfCamera);
 
         if (_centeringCamera)
         {

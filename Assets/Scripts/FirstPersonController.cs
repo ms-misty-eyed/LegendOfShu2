@@ -121,7 +121,7 @@ namespace StarterAssets
         // 3. Force the camera target to match immediately
         CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
             
-            //Disable the cursor
+            Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
 
@@ -130,6 +130,9 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+            Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
         }
 
         private void LateUpdate()

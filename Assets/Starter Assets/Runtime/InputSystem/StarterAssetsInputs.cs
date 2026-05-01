@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
+
 namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
@@ -23,6 +24,7 @@ namespace StarterAssets
 		
 		[Header("Look Sensitivity")]
 		public float lookSensitivity = 300f;
+
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
@@ -71,14 +73,16 @@ namespace StarterAssets
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
+{
+    Debug.Log("OnApplicationFocus called! hasFocus: " + hasFocus + " | cursorLocked: " + cursorLocked);
+    SetCursorState(cursorLocked);
+}
 
-		private void SetCursorState(bool newState)
-		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-		}
+private void SetCursorState(bool newState)
+{
+    Debug.Log("SetCursorState called with: " + newState);
+    Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+}
 
 		public void ResetVelocity()
 		{
