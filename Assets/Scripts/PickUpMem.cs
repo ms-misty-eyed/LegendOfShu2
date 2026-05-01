@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PickUpMem : MonoBehaviour
 {
     public GameObject pickUpText;
+    public GameObject turnText;
     public Transform tpTo;
     public bool isPickedUp;
     public Rigidbody rb;
@@ -27,6 +28,7 @@ public class PickUpMem : MonoBehaviour
     void Start()
     {
         pickUpText.SetActive(false);
+        turnText.SetActive(false);
         _cam = Camera.main;
         _originalRotation = transform.rotation;
 
@@ -73,8 +75,10 @@ public class PickUpMem : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)){
+            turnText.SetActive(false);
             SendToTree();
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -87,6 +91,7 @@ public class PickUpMem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             pickUpText.SetActive(false);
+            turnText.SetActive(true);
             _isInspecting = true;
             _justStartedInspecting = true;
             _centeringCamera = true;
