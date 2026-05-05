@@ -12,12 +12,21 @@ public class HallwayTeleport : MonoBehaviour
     public Transform destinationS2;
     public Transform destinationS3;
     public Transform destinationS4;
+    public Transform finalDestination;
+
+    public GameObject end;
+    public GameObject bg;
+    public GameObject setting;
 
     public Transform player;
+
+    private bool _waitingForSpace = false;
     
     void Start()
     {
         my_season_script = my_season.GetComponent<SeasonCheck>();
+        end.SetActive(false);
+        bg.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,6 +52,14 @@ public class HallwayTeleport : MonoBehaviour
             case 3: controller.transform.position = destinationS4.position;
                 player.SetPositionAndRotation(destinationS4.position,destinationS4.rotation);
                 break;
+            case 4: 
+            //controller.transform.position = finalDestination.position;
+                //player.SetPositionAndRotation(finalDestination.position,finalDestination.rotation);
+                end.SetActive(true);
+                bg.SetActive(true);
+                setting.SetActive(false);
+                _waitingForSpace = true;
+                break;
             
         }
         //Thicken the fog
@@ -55,5 +72,18 @@ public class HallwayTeleport : MonoBehaviour
         StarterAssetsInputs movement = controller.GetComponent<StarterAssetsInputs>();
         if (movement != null) movement.ResetVelocity();
         //Debug.Log("Teleported!");
+    }
+
+    public void Update(){
+        if (_waitingForSpace)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                end.SetActive(false);
+                bg.SetActive(false);
+                setting.SetActive(true);
+                _waitingForSpace = false;
+            }
+        }
     }
 }

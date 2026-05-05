@@ -996,11 +996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8144c49b67a7a04da2f215d2bb0a897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  intro: {fileID: 0}
-  bg: {fileID: 0}
-  menu: {fileID: 0}
-  playButton: {fileID: 0}
-  escButton: {fileID: 0}
+  objectsToShow: []
+  objectsToHide: []
 --- !u!1 &494394548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,11 +1445,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8144c49b67a7a04da2f215d2bb0a897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  intro: {fileID: 281213373}
-  bg: {fileID: 1692999864}
-  menu: {fileID: 2016187187}
-  playButton: {fileID: 1562684843}
-  escButton: {fileID: 810733751}
+  objectsToShow:
+  - {fileID: 1692999864}
+  - {fileID: 281213373}
+  objectsToHide:
+  - {fileID: 1562684843}
+  - {fileID: 810733751}
+  - {fileID: 2016187187}
 --- !u!1 &1321262334
 GameObject:
   m_ObjectHideFlags: 0

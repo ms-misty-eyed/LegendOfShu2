@@ -1,44 +1,46 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject intro;
-    public GameObject bg;
-    public GameObject menu;
-    public GameObject playButton;
-    public GameObject escButton;
+    public List<GameObject> objectsToShow; // drag all objects you want shown here
+    public List<GameObject> objectsToHide; // drag all objects you want hidden here
 
     private bool _waitingForSpace = false;
 
     public void Start()
     {
-        intro.SetActive(false);
-        bg.SetActive(false);
+        foreach (GameObject obj in objectsToShow)
+        {
+            obj.SetActive(false);
+        }
     }
 
     void Update()
     {
         if (_waitingForSpace)
-    {
-        Debug.Log("Waiting for space...");
-        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space pressed!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
-    }
     }
 
     public void PlayGame()
     {
-        _waitingForSpace = true; // now Update() starts listening for Space
-        Debug.Log("space = true");
-        intro.SetActive(true);
-        bg.SetActive(true);
-        menu.SetActive(false);
-        playButton.SetActive(false);
-        escButton.SetActive(false);
+        _waitingForSpace = true;
+
+        foreach (GameObject obj in objectsToShow)
+        {
+            obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in objectsToHide)
+        {
+            obj.SetActive(false);
+        }
     }
 
     public void QuitGame()
