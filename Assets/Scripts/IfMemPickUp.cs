@@ -39,8 +39,10 @@ public class IfMemPickUp : MonoBehaviour
         _requiredScripts = new List<PickUpMem>();
         pickUpText.SetActive(false);
         turnText.SetActive(false);
-        GetComponent<Renderer>().enabled = false;
-        GetComponent<Collider>().enabled = false;
+        foreach (Renderer r in GetComponentsInChildren<Renderer>())
+    r.enabled = false;
+foreach (Collider col in GetComponentsInChildren<Collider>())
+    col.enabled = false;
         _cam = Camera.main;
         _originalRotation = transform.rotation;
         rb = GetComponent<Rigidbody>();
@@ -77,8 +79,10 @@ public class IfMemPickUp : MonoBehaviour
         // Show object only when all conditions are met
         if (AllRequiredPickedUp())
         {
-            GetComponent<Renderer>().enabled = true;
-            GetComponent<Collider>().enabled = true;
+            foreach (Renderer r in GetComponentsInChildren<Renderer>())
+    r.enabled = true;
+foreach (Collider col in GetComponentsInChildren<Collider>())
+    col.enabled = true;
         }
 
         // Handle pickup input in Update
